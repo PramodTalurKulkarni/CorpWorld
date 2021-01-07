@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CorpWorld</title>
+
+  <title>CorpWorld</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color: #B3E5FC;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;">
+ <br>1. In Most corporate cultures, gift-giving is important. Whether you are trying to thank long-standing customers, remind someone of your business, or recognize a hardworking employee, the basic reason behind gift-giving is the same. 
+ <br>2.Gifts are meant to affirm business relationships and enhance personal connections between clients, customers, and employees. In fact, according to Promotional Products Association International, gift-giving is proven to increase business activity hence, increasing the return on investment.                                
+ <br>3.This project is all about “Corporate Gifting” like every Corporate/IT companies will give gifts to their best employees like laptops, Mobiles, Cups, T-shirts,Concert Tickets etc., 
+ <br>4.The Company Website is user friendly ,Clients can buy Gifting products through this in a bulg quantity.
+ <br>5.It can be  developed further future enhancement like Event organising Management also.
+  </h3>
+  {% include "ecom/footer.html" %}
+</body>
+</html>
